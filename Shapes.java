@@ -25,7 +25,7 @@ class Triangle extends Shape {
 
 class Rhomboid extends Shape
 {
-	public String toString(){return "Rh"; }
+	public String toString(){return "Rlh"; }
 }
 
 public class Shapes {
@@ -36,7 +36,12 @@ public class Shapes {
 			System.out.println(s+"draw");
 	}
 
-	public static void main(String[] args) {
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    public static void main(String[] args) {
 		List<Shape> shapeList = Arrays.asList(new Circle(), new Triangle());
 
 			for(Shape shape : shapeList)
@@ -45,6 +50,8 @@ public class Shapes {
 	for(Shape shape : shapeList)
 		rotate(shape);
 	}
+
+
 
 
 
