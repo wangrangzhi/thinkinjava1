@@ -1,14 +1,14 @@
 import java.io.*;
-import java.uiil.*;
-import java.uilt.regex.*;
+import java.util.*;
+import java.util.regex.*;
 
-public class SortDirList21
+public class SortedDirList21
 {
 	private String[] dirList;
 	public SortedDirList21(File dir)
 	{
 		dirList = dir.list();
-		Array.sort(dirList, String.CASE_INSENSITIVE_ORDER);
+		Arrays.sort(dirList, String.CASE_INSENSITIVE_ORDER);
 	}
 
 	public String[] list() {return dirList;}
@@ -25,6 +25,7 @@ public class SortDirList21
 				slist.add(s);
 			}
 		}
+		System.out.println(count);
 		return slist.toArray(new String[count]);
 	}
 
@@ -38,10 +39,11 @@ public class SortDirList21
 	public static void main(String[] args)
 	{
 		SortedDirList21 dirList = new SortedDirList21(new File("."));
+	//	System.out.println(dirList);
 		System.out.println(dirList);
 		for(String s:dirList.list())
 			System.out.println(s);
-
+		System.out.println("sdfs");
 		System.out.println();
 		for(String s : dirList.list(".+\\.java"))
 			System.out.println(s);
