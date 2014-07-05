@@ -38,8 +38,9 @@ public class SortedDirList21
 
 	public static void main(String[] args)
 	{
-		SortedDirList21 dirList = new SortedDirList21(new File("."));
-	//	System.out.println(dirList);
+		SortedDirList21 dirList = new SortedDirList21(new File(args[0]));
+		System.out.println(args[0]);
+		//System.out.println(args[1]);
 		System.out.println(dirList);
 		for(String s:dirList.list())
 			System.out.println(s);
