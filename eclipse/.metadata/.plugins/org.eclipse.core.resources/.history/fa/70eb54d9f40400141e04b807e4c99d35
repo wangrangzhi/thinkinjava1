@@ -1,0 +1,24 @@
+package swing;
+import javax.swing.*;
+
+
+public class helloworld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("hell");
+		JLabel lable = new JLabel("lable");
+		frame.add(lable);
+		JLabel lable1 = new JLabel("lable");
+		frame.add(lable1);
+		JLabel lable2 = new JLabel("lable");
+		frame.add(lable2);
+	//	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(300, 200);
+		frame.setVisible(true);
+		lable.setText("lab");
+		lable1.setText("lab1");
+		lable2.setText("lab2");
+	}
+
+}

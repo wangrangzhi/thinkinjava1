@@ -1,0 +1,17 @@
+package swing;
+import javax.swing.*;
+
+
+public class helloworld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		JFrame frame = new JFrame("hell");
+		JLable lable = new JLable("lable");
+		frame.addlable);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setSize(300, 200);
+		frame.setVisible(true);
+	}
+
+}
